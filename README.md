@@ -67,29 +67,6 @@ https://crisis-counselor-v2.isaacwells919.workers.dev
 
 ---
 
-## Architecture
-
-### High-level design
-
-Browser (Pages)
-│
-│ HTTP (fetch)
-▼
-Cloudflare Worker (Hono API)
-│
-├── Durable Object (Session state)
-│ └── Conversation history
-│
-├── Cloudflare AI
-│ ├── Client simulation
-│ └── Feedback generation
-│
-└── Cloudflare D1
-├── sessions
-├── messages
-└── user_progress
-
-
 ### Core components
 
 - **Cloudflare Pages**
