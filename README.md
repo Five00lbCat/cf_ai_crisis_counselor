@@ -1,3 +1,7 @@
+## Demo
+
+[Watch the demo video](demo/demo.mp4)
+
 # Crisis Counseling Simulator
 
 An AI-powered crisis counseling training simulator built on Cloudflare’s edge platform.  
@@ -16,6 +20,16 @@ Key goals:
 - Demonstrate a modern, serverless, edge-first architecture
 
 ---
+
+## Quick Evaluation Notes
+
+- The core logic lives in `src/index.ts`
+- Each counseling session is backed by a Durable Object keyed by `sessionId`
+- Conversation state is stored in the Durable Object; D1 is used for persistence and analytics
+- AI is used in two places:
+  - Client simulation during the session
+  - Supervisory feedback generation at session end
+- The frontend is a static Pages deployment that calls the Worker API directly
 
 ## Live Deployment
 
