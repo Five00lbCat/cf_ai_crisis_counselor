@@ -1,0 +1,21 @@
+name = "crisis-counselor-v2"
+main = "src/index.ts"
+compatibility_date = "2024-01-01"
+
+[ai]
+binding = "AI"
+
+[[durable_objects.bindings]]
+name = "SESSIONS"
+class_name = "SessionDurableObject"
+
+[[migrations]]
+tag = "v1"
+new_sqlite_classes = ["SessionDurableObject"]
+
+[[d1_databases]]
+binding = "DB"
+database_name = "crisis_counselor_db"
+database_id = "293ab95f-6694-4ed4-84a5-dcc02c737e85"
+
+pages_build_output_dir = "public"

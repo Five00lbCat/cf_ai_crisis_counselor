@@ -1,0 +1,28 @@
+{
+  "name": "cf_ai_crisis_counselor",
+  "version": "1.0.0",
+  "description": "AI-powered crisis counseling training simulator",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Five00lbCat/cf_ai_crisis_counselor.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/Five00lbCat/cf_ai_crisis_counselor/issues"
+  },
+  "homepage": "https://github.com/Five00lbCat/cf_ai_crisis_counselor#readme",
+  "dependencies": {
+    "hono": "^4.11.3"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "^4.20260109.0",
+    "wrangler": "^4.58.0"
+  }
+}
